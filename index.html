@@ -54,8 +54,10 @@
                 </div>
                 
                 <div class="py-2">
-                    <p class="mb-3"><strong class="text-gray-900 font-bold">Expect:</strong> Games, deep conversations, networking, food, goodies and a great time.</p>
-                    <p><strong class="text-gray-900 font-bold">Do NOT Expect:</strong> Formal dressing, boring speeches!</p>
+                    <p class="mb-3"><strong class="text-gray-900 font-bold">Expect:</strong></p>
+                    <p class ="text-gray-900 font-bold">Games, deep conversations, networking, food, goodies and a great time.</p>
+                    <p><strong class="text-gray-900 font-bold">Do NOT Expect:</strong></p>
+                    <p class ="text-gray-900 font-bold">Formal dressing, boring speeches!</p>
                 </div>
 
                 <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-5 rounded-2xl border border-blue-100/50 shadow-inner">
@@ -429,7 +431,7 @@
 
             } catch (error) {
                 console.error("Error saving data:", error);
-                alert("Something went wrong with the upload. Please check your Supabase connection.");
+                alert("Something went wrong with the upload.");
                 btn.innerText = "Submit Receipt";
                 btn.disabled = false;
             }
