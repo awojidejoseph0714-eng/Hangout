@@ -11,8 +11,7 @@
     <style>
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
-            /* FIXED: Used a direct image link instead of a Pinterest shortlink */
-            background-image: url('https://i.pinimg.com/736x/9a/01/cf/9a01cfedd665a93732851c59502d0878.jpg?q=80&w=2070&auto=format&fit=crop');
+            background-image: url('https://images.unsplash.com/photo-1555243896-c709bfa0b564?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -24,89 +23,237 @@
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
-        /* Custom scrollbar for a polished look */
-        ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: transparent; }
-        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        /* Hide scrollbar for cleaner UI */
+        ::-webkit-scrollbar { width: 0px; background: transparent; }
     </style>
 </head>
 <body class="min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 relative">
 
-    <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/60 z-0"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70 z-0"></div>
 
-    <div class="max-w-md w-full bg-white/95 backdrop-blur-xl rounded-[2rem] shadow-2xl shadow-black/20 p-8 sm:p-10 relative z-10 border border-white/40 my-8">
+    <div class="max-w-md w-full bg-white/95 backdrop-blur-xl rounded-[2rem] shadow-2xl shadow-black/30 p-8 relative z-10 border border-white/40 my-8">
         
         <div id="step-1" class="step active">
-            <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-8 mx-auto shadow-lg shadow-blue-500/30 transform rotate-3">
-                <svg class="w-8 h-8 text-white transform -rotate-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+            <div class="w-16 h-16 bg-blue-600 rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-lg shadow-blue-500/40">
+                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z"></path></svg>
             </div>
-            <h1 class="text-3xl font-extrabold text-center text-gray-900 mb-6 tracking-tight">Redeemed Family Hangout</h1>
             
-            <div class="space-y-5 text-gray-600 text-sm sm:text-base leading-relaxed">
-                <div class="flex items-start gap-3 bg-gray-50/50 p-3 rounded-xl border border-gray-100">
-                    <span class="text-xl">📅</span>
-                    <div><span class="font-bold text-gray-900 block">Date</span>Saturday, April 18th, 2026</div>
-                </div>
-                <div class="flex items-start gap-3 bg-gray-50/50 p-3 rounded-xl border border-gray-100">
-                    <span class="text-xl">📍</span>
-                    <div><span class="font-bold text-gray-900 block">Location</span> Akure Tech Hub, FUTA.</div>
-                </div>
-                
-                <div class="py-2">
-                    <p class="mb-3"><strong class="text-gray-900 font-bold">Expect:</strong></p>
-                    <p class ="text-gray-900 font-bold">Games, deep conversations, networking, food, goodies and a great time.</p>
-                    <p><strong class="text-gray-900 font-bold">Do NOT Expect:</strong></p>
-                    <p class ="text-gray-900 font-bold">Formal dressing, boring speeches!</p>
+            <h1 class="text-3xl font-extrabold text-center text-gray-900 mb-6 tracking-tight leading-tight">Redeemed Family Hangout</h1>
+            
+            <div class="space-y-4 text-gray-600">
+                <div class="grid grid-cols-2 gap-3">
+                    <div class="bg-gray-50/80 p-3 rounded-2xl border border-gray-100">
+                        <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Date</span>
+                        <p class="font-bold text-gray-900 text-sm mt-1">Sat, April 18th</p>
+                        <p class="text-xs text-gray-500">2026</p>
+                    </div>
+                    <div class="bg-gray-50/80 p-3 rounded-2xl border border-gray-100">
+                        <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Location</span>
+                        <p class="font-bold text-gray-900 text-sm mt-1">Akure Tech Hub</p>
+                        <p class="text-xs text-gray-500">FUTA</p>
+                    </div>
                 </div>
 
-                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-5 rounded-2xl border border-blue-100/50 shadow-inner">
-                    <div class="flex justify-between items-center mb-2">
-                        <strong class="text-indigo-900 font-extrabold text-lg">Why contribute ₦10,000?</strong>
+                <div class="py-2 space-y-2">
+                    <div class="flex items-start gap-2">
+                        <span class="text-green-500 text-lg">✓</span>
+                        <p class="text-sm leading-snug"><strong class="text-gray-900">Expect:</strong> Games, deep talks, networking, food & goodies.</p>
                     </div>
-                    <p class="text-sm text-indigo-800/80">Covers venue access, food platter, drinks, and logistics. This is pooled together to make it affordable for everyone. We also want to get something for the church as per during our resumption from IT, during Thanksgiving. We don't know what yet, and it heavily depends on the volume of contribution towards the hangout.</p>
+                    <div class="flex items-start gap-2">
+                        <span class="text-red-500 text-lg">✕</span>
+                        <p class="text-sm leading-snug"><strong class="text-gray-900">No:</strong> Formal dressing or boring speeches!</p>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50/80 p-4 rounded-2xl border border-blue-100">
+                    <h3 class="font-bold text-blue-900 text-sm mb-1">Why ₦10,000?</h3>
+                    <p class="text-xs text-blue-800/70 leading-relaxed">
+                        Covers venue, food, drinks & logistics. Pooled to keep it affordable. Part also goes towards a Thanksgiving gift for the church upon our return from IT.
+                    </p>
                 </div>
             </div>
             
-            <button onclick="nextStep(2)" class="mt-8 w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold py-4 rounded-xl hover:from-blue-700 hover:to-indigo-700 transform hover:-translate-y-1 transition-all duration-200 shadow-xl shadow-blue-500/30">
+            <button onclick="nextStep(2)" class="mt-6 w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold py-4 rounded-xl shadow-xl shadow-blue-500/20 hover:scale-[1.02] transition-transform">
                 Register Now
             </button>
         </div>
 
         <div id="step-2" class="step">
-            <button onclick="nextStep(1)" class="text-gray-400 hover:text-gray-800 mb-6 flex items-center text-sm font-semibold transition-colors">
-                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg> Back
+            <button onclick="nextStep(1)" class="text-gray-400 hover:text-gray-800 mb-6 flex items-center text-sm font-bold transition-colors">
+                ← Back
             </button>
-            <h2 class="text-2xl font-extrabold text-gray-900 mb-2 tracking-tight">Your Details</h2>
-            <p class="text-sm text-gray-500 mb-8">Let us know who you are, so we can prepare your spot.</p>
+            <h2 class="text-2xl font-extrabold text-gray-900 mb-2">Your Details</h2>
+            <p class="text-sm text-gray-500 mb-6">Let us know who is coming.</p>
             
-            <div class="space-y-5">
-                <div class="group">
-                    <label class="block text-sm font-bold text-gray-700 mb-2 ml-1">Full Name</label>
-                    <input type="text" id="name" placeholder="e.g. Tunde Alabi" class="w-full bg-gray-50/50 border-2 border-gray-100 px-5 py-4 rounded-xl focus:bg-white focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 outline-none transition-all placeholder-gray-400 font-medium text-gray-900" oninput="checkForm()">
+            <div class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-gray-500 uppercase mb-1 ml-1">Full Name</label>
+                    <input type="text" id="name" placeholder="e.g. Tunde Alabi" class="w-full bg-gray-50 border-2 border-gray-100 px-4 py-3 rounded-xl focus:bg-white focus:border-blue-500 outline-none transition-all font-medium" oninput="checkForm()">
                 </div>
-                <div class="group">
-                    <label class="block text-sm font-bold text-gray-700 mb-2 ml-1">WhatsApp Number</label>
-                    <input type="tel" id="whatsapp" placeholder="080..." class="w-full bg-gray-50/50 border-2 border-gray-100 px-5 py-4 rounded-xl focus:bg-white focus:ring-4 focus:ring-blue-500/10 focus:border-blue-500 outline-none transition-all placeholder-gray-400 font-medium text-gray-900" oninput="checkForm()">
+                <div>
+                    <label class="block text-xs font-bold text-gray-500 uppercase mb-1 ml-1">WhatsApp Number</label>
+                    <input type="tel" id="whatsapp" placeholder="080..." class="w-full bg-gray-50 border-2 border-gray-100 px-4 py-3 rounded-xl focus:bg-white focus:border-blue-500 outline-none transition-all font-medium" oninput="checkForm()">
                 </div>
-                <button id="btn-proceed" onclick="nextStep(3)" disabled class="w-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold py-4 rounded-xl hover:from-blue-700 hover:to-indigo-700 transform hover:-translate-y-1 transition-all duration-200 shadow-xl shadow-blue-500/30 disabled:opacity-50 disabled:transform-none disabled:shadow-none disabled:cursor-not-allowed mt-4">
+                <button id="btn-proceed" onclick="nextStep(3)" disabled class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl disabled:opacity-50 disabled:cursor-not-allowed mt-4 shadow-lg shadow-blue-500/20">
                     Proceed to Payment
                 </button>
             </div>
         </div>
 
         <div id="step-3" class="step">
-            <button onclick="nextStep(2)" class="text-gray-400 hover:text-gray-800 mb-6 flex items-center text-sm font-semibold transition-colors">
-                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg> Back
+            <button onclick="nextStep(2)" class="text-gray-400 hover:text-gray-800 mb-6 flex items-center text-sm font-bold transition-colors">
+                ← Back
             </button>
-            <h2 class="text-2xl font-extrabold text-gray-900 mb-2 tracking-tight">Payment Setup</h2>
-            <p class="text-sm text-gray-600 mb-8">Please transfer exactly <strong class="text-gray-900 text-base font-extrabold bg-blue-100 px-2 py-1 rounded">₦10,000</strong></p>
+            <h2 class="text-2xl font-extrabold text-gray-900 mb-2">Payment</h2>
+            <p class="text-sm text-gray-500 mb-6">Transfer <strong class="text-gray-900">₦10,000</strong> to:</p>
             
-            <div class="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-2xl mb-8 shadow-2xl relative overflow-hidden group text-white">
-                <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 transition-transform group-hover:scale-110 duration-500"></div>
-                <div class="absolute bottom-0 left-0 w-24 h-24 bg-white/5 rounded-full -ml-12 -mb-12"></div>
+            <div class="bg-gray-900 p-6 rounded-2xl mb-6 text-white shadow-xl relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -mr-10 -mt-10"></div>
+                <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Bank</p>
+                <p class="font-bold text-lg mb-4">Moniepoint</p>
+                <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mb-1">Account Number</p>
+                <p class="font-mono text-3xl font-bold text-blue-300 tracking-wider">0123456789</p>
+                <p class="text-xs text-gray-400 font-bold uppercase tracking-wider mt-4 mb-1">Name</p>
+                <p class="font-bold">Redeemed Family</p>
+            </div>
+
+            <button onclick="nextStep(4)" class="w-full bg-emerald-500 text-white font-bold py-4 rounded-xl shadow-lg shadow-emerald-500/20 hover:bg-emerald-600 transition-colors">
+                I have paid
+            </button>
+        </div>
+
+        <div id="step-4" class="step">
+            <button onclick="nextStep(3)" class="text-gray-400 hover:text-gray-800 mb-6 flex items-center text-sm font-bold transition-colors">
+                ← Back
+            </button>
+            <h2 class="text-2xl font-extrabold text-gray-900 mb-2">Upload Proof</h2>
+            <p class="text-sm text-gray-500 mb-6">Please upload your receipt.</p>
+            
+            <div class="relative border-2 border-dashed border-blue-200 rounded-2xl h-48 bg-blue-50/50 flex flex-col items-center justify-center text-center p-4 mb-6 hover:bg-blue-50 transition-colors">
+                <input type="file" id="receipt" accept="image/*" onchange="checkReceipt()" class="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-20"/>
+                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center mb-2 shadow-sm">
+                    <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg>
+                </div>
+                <p class="font-bold text-blue-900">Tap to upload</p>
+                <p class="text-xs text-blue-600/70 mt-1" id="file-name-display">Images only (Max 5MB)</p>
+            </div>
+            
+            <button id="btn-submit-receipt" onclick="generateTicket()" disabled class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl disabled:opacity-50 disabled:cursor-not-allowed shadow-lg shadow-blue-500/20">
+                Submit Receipt
+            </button>
+        </div>
+
+        <div id="step-5" class="step text-center">
+            <div class="w-20 h-20 bg-emerald-100 rounded-full flex items-center justify-center mb-6 mx-auto">
+                <svg class="w-10 h-10 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <h2 class="text-3xl font-extrabold text-gray-900 mb-2">You're In!</h2>
+            <p class="text-gray-500 mb-6">Here is your entry pass:</p>
+            
+            <div class="bg-gray-900 text-white py-6 px-4 rounded-2xl mb-6 relative shadow-xl">
+                <div class="absolute top-1/2 left-0 w-4 h-8 bg-white rounded-r-full -mt-4"></div>
+                <div class="absolute top-1/2 right-0 w-4 h-8 bg-white rounded-l-full -mt-4"></div>
+                <p class="text-xs text-gray-400 font-bold uppercase tracking-widest mb-2">Ticket Code</p>
+                <p id="ticket-code" class="text-4xl font-mono font-black tracking-widest text-emerald-400">LOADING</p>
+            </div>
+            
+            <div class="bg-red-50 text-red-600 p-4 rounded-xl text-sm font-bold text-left flex gap-3">
+                <span class="text-xl">📸</span>
+                <p>Screenshot this code now! You will need it at the entrance.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // --- CONFIGURATION ---
+        const { createClient } = supabase;
+        const supabaseUrl = 'https://lzomsegjnxiwlohifcmw.supabase.co'; 
+        const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx6b21zZWdqbnhpd2xvaGlmY213Iiwicm9sZSI6ImV4cCI6MjA4ODA2MjI5MH0.v1jGjXtXaURC5PUZBs039qxFe3rr3n-nKIpmaypzYok'; 
+        const supabaseClient = createClient(supabaseUrl, supabaseKey);
+
+        function nextStep(step) {
+            document.querySelectorAll('.step').forEach(el => el.classList.remove('active'));
+            document.getElementById('step-' + step).classList.add('active');
+        }
+
+        function checkForm() {
+            const name = document.getElementById('name').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const btn = document.getElementById('btn-proceed');
+            if(btn) btn.disabled = !(name.length > 2 && whatsapp.length > 8);
+        }
+
+        function checkReceipt() {
+            const fileInput = document.getElementById('receipt');
+            const btn = document.getElementById('btn-submit-receipt');
+            const display = document.getElementById('file-name-display');
+            
+            if (fileInput.files.length > 0) {
+                btn.disabled = false;
+                display.innerText = "Selected: " + fileInput.files[0].name;
+                display.className = "text-xs text-emerald-600 font-bold mt-1";
+            } else {
+                btn.disabled = true;
+            }
+        }
+
+        async function generateTicket() {
+            const btn = document.getElementById('btn-submit-receipt');
+            const originalText = btn.innerText;
+            btn.innerText = "Uploading...";
+            btn.disabled = true;
+
+            try {
+                // 1. Gather Data
+                const code = 'RFH-' + Math.random().toString(36).substring(2, 8).toUpperCase();
+                const name = document.getElementById('name').value;
+                const whatsapp = document.getElementById('whatsapp').value;
+                const file = document.getElementById('receipt').files[0];
                 
-                <div class="relative z-10">
+                if (!file) throw new Error("Please select a receipt image.");
+
+                const fileExt = file.name.split('.').pop();
+                const fileName = `${code}-${Date.now()}.${fileExt}`;
+                
+                // 2. Upload Image
+                const { data: uploadData, error: uploadError } = await supabaseClient.storage
+                    .from('receipts')
+                    .upload(fileName, file);
+
+                if (uploadError) throw new Error("Upload Failed: " + uploadError.message);
+
+                // 3. Get Image URL
+                const { data: urlData } = supabaseClient.storage
+                    .from('receipts')
+                    .getPublicUrl(fileName);
+                
+                // 4. Save Data
+                const { error: dbError } = await supabaseClient
+                    .from('attendees')
+                    .insert([{ 
+                        name: name, 
+                        whatsapp: whatsapp, 
+                        receipt_url: urlData.publicUrl, 
+                        ticket_code: code 
+                    }]);
+
+                if (dbError) throw new Error("Database Error: " + dbError.message);
+
+                // 5. Success
+                document.getElementById('ticket-code').innerText = code;
+                nextStep(5);
+
+            } catch (error) {
+                console.error(error);
+                alert("Error: " + error.message + "\n\n(Tip: Check if RLS Policy is set to 'Public' in Supabase!)");
+                btn.innerText = originalText;
+                btn.disabled = false;
+            }
+        }
+    </script>
+</body>
+</html>
                     <p class="text-xs text-gray-400 font-bold uppercase tracking-widest mb-1">Bank Name</p>
                     <p class="font-bold text-lg mb-6">Moniepoint</p>
                     
